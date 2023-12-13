@@ -3,11 +3,11 @@ package entity
 import "time"
 
 type User struct {
-	ID        int    `gorm:"primaryKey;not null;type:int" json:"id"`
-	Username  string `json:"username"`
-	Email     string `json:"email"`
-	Password  string `json:"password"`
-	Age       int    `json:"age"`
+	ID        int
+	Email     string
+	Username  string
+	Password  string
+	Age       int
 	CreatedAt time.Time
 	UpdatedAt time.Time
 }
